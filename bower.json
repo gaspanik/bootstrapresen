@@ -1,0 +1,21 @@
+{
+  "name": "bootstrapresen",
+  "version": "0.0.1",
+  "authors": [
+    "cipher <gmgateway@gmail.com>"
+  ],
+  "description": "Bootstrap + OnePageScroll",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "onepage-scroll": "~1.1.1"
+  }
+}
