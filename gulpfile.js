@@ -21,23 +21,8 @@ gulp.task('less', function() {
     .pipe(gulp.dest(paths.cssDir));
 });
 
-gulp.task('concat', function() {
-  return gulp.src([paths.cssDir + 'bootstrap.css', paths.cssDir + 'onepage-scroll.css'])
-    .pipe(concat('style.css'))
-    .pipe(gulp.dest(paths.cssDir))
-});
-
-gulp.task('minify', function() {
-  return gulp.src([paths.cssDir + "style.css"])
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(minifycss())
-    .pipe(gulp.dest(paths.cssDir));
-});
-
 gulp.task('watch', function() {
-  gulp.watch([paths.lessDir + '*.less'], ['less', 'concat', 'minify']);
+  gulp.watch([paths.lessDir + '*.less'], ['less']);
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['less', 'watch']);
