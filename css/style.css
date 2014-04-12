@@ -1,0 +1,24 @@
+.cover-unit{
+  display: table;
+  min-height: 100%;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #000;
+ }
+.cover-section {
+  display: table-cell;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  color: #FFF;
+}
+
+.cu-page-1 {
+  background-image: url("https://farm8.staticflickr.com/7309/12233601535_5bbcdbf2bd_h.jpg");
+}
+.cu-page-2 {
+  background-color: #333;
+}
