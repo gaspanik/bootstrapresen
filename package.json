@@ -1,9 +1,11 @@
 {
   "name": "bootstrapresen",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Bootstrap + OnePageScroll",
   "main": "gulpfile.js",
   "scripts": {
+    "postinstall": "bower install && make",
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -12,8 +14,10 @@
     "gulp": "*",
     "gulp-concat": "*",
     "gulp-csso": "*",
+    "gulp-jade": "*",
     "gulp-less": "*",
     "gulp-rename": "*",
-    "gulp-util": "*"
+    "gulp-util": "*",
+    "marked": "*"
   }
 }
